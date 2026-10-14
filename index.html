@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Monolith Builders &amp; Materials | Premium Building Materials, Delivered with Precision</title>
+  <meta name="description" content="Monolith Builders &amp; Materials is a fictional demo brand showing how a Nigerian building-materials supplier can present its catalogue and take quote requests on WhatsApp.">
+  <meta name="theme-color" content="#101110">
+  <script>document.documentElement.classList.add('js');</script>
+
+  <!-- Optional fonts. The page falls back to system serif / sans if these cannot load. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&amp;family=Manrope:wght@400;500;600;700&amp;display=swap">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23101110'/%3E%3Crect x='8' y='6' width='16' height='20' fill='none' stroke='%23B69A69' stroke-width='2'/%3E%3C/svg%3E">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ============ NAVIGATION ============ -->
+  <header class="nav" id="nav">
+    <div class="nav__inner container">
+      <a class="logo" href="#top" aria-label="Monolith Builders and Materials, back to top">
+        <span class="logo__mark" aria-hidden="true"></span>
+        <span class="logo__text"><strong>MONOLITH</strong><small>BUILDERS &amp; MATERIALS</small></span>
+      </a>
+
+      <nav class="nav__links" aria-label="Primary">
+        <a href="#materials" data-nav>Materials</a>
+        <a href="#services" data-nav>Services</a>
+        <a href="#projects" data-nav>Projects</a>
+        <a href="#about" data-nav>About</a>
+        <a href="#contact" data-nav>Contact</a>
+      </nav>
+
+      <a class="btn btn--primary nav__cta" href="#quote">REQUEST A QUOTE</a>
+
+      <button class="burger" id="burger" type="button" aria-expanded="false" aria-controls="menu" aria-label="Open menu">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="menu" id="menu" aria-hidden="true">
+    <nav class="menu__inner container" aria-label="Mobile">
+      <a href="#materials" data-menu>Materials</a>
+      <a href="#services" data-menu>Services</a>
+      <a href="#projects" data-menu>Projects</a>
+      <a href="#about" data-menu>About</a>
+      <a href="#contact" data-menu>Contact</a>
+      <a class="btn btn--primary" href="#quote" data-menu>REQUEST A QUOTE</a>
+    </nav>
+  </div>
+
+  <main id="main">
+    <!-- ============ HERO ============ -->
+    <section class="hero grain" id="top" aria-labelledby="hero-title">
+      <div class="hero__bg" aria-hidden="true">
+        <div class="bg-layer bg-grad"></div>
+        <video class="hero__video" muted loop playsinline preload="none" poster="hero-poster.jpg" aria-hidden="true" tabindex="-1"></video>
+        <div class="bg-layer bg-grid" data-depth="12"></div>
+        <div class="bg-layer bg-light" data-depth="26"></div>
+        <div class="bg-layer dust" id="dust"></div>
+        <div class="hero__visual media" data-art="hero" data-img="hero" data-alt="Modern concrete building with strong vertical lines against the sky"></div>
+        <div class="bg-layer bg-shade"></div>
+      </div>
+
+      <div class="hero__content container">
+        <p class="eyebrow hero-in" style="--i:0">BUILDING MATERIALS. DELIVERED WITH PRECISION.</p>
+        <h1 class="hero__title" id="hero-title">
+          <span class="line"><span style="--i:1">BUILD THE</span></span>
+          <span class="line"><span style="--i:2">EXTRAORDINARY.</span></span>
+        </h1>
+        <p class="hero__lead hero-in" style="--i:3">Premium building materials, dependable supply, and professional service for projects built to last.</p>
+        <div class="hero__actions hero-in" style="--i:4">
+          <a class="btn btn--primary" href="#materials">EXPLORE MATERIALS</a>
+          <a class="btn btn--ghost" href="#quote">REQUEST A QUOTE</a>
+        </div>
+      </div>
+
+      <a class="scroll-cue hero-in" style="--i:5" href="#principles" aria-label="Scroll to content">
+        <span>SCROLL</span><i aria-hidden="true"></i>
+      </a>
+    </section>
+
+    <!-- ============ PRINCIPLES ============ -->
+    <section class="principles" id="principles" aria-label="Service principles">
+      <ul class="principles__list container">
+        <li class="reveal"><span class="idx">01</span><h2>QUALITY MATERIALS</h2></li>
+        <li class="reveal"><span class="idx">02</span><h2>RELIABLE SUPPLY</h2></li>
+        <li class="reveal"><span class="idx">03</span><h2>PROJECT SUPPORT</h2></li>
+        <li class="reveal"><span class="idx">04</span><h2>DELIVERY COORDINATION</h2></li>
+      </ul>
+    </section>
+
+    <!-- ============ MATERIALS ============ -->
+    <section class="section section--light" id="materials" aria-labelledby="materials-title">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="eyebrow eyebrow--ink">THE CATALOGUE</p>
+          <h2 class="display" id="materials-title">Materials for every stage of the build.</h2>
+          <p class="section__sub">Choose a category to filter the catalogue below. Everything listed is illustrative demo content.</p>
+        </header>
+
+        <div class="cats" id="cats" role="list"></div>
+
+        <div class="catalogue" id="catalogue">
+          <div class="catalogue__panel" id="panel" aria-live="polite">
+            <div>
+              <p class="eyebrow eyebrow--ink" id="panel-kicker">ALL CATEGORIES</p>
+              <h3 class="panel__title" id="panel-title">Sample product listings</h3>
+              <p class="panel__text" id="panel-text">Products below are fictional examples. Prices and stock are confirmed by the supplier on request.</p>
+            </div>
+            <div class="tools">
+              <label class="search">
+                <span class="sr-only">Search products</span>
+                <input type="search" id="search" placeholder="Search products or specifications" autocomplete="off">
+              </label>
+              <div class="chips" id="chips" role="group" aria-label="Filter by category"></div>
+            </div>
+          </div>
+
+          <p class="count" id="count" aria-live="polite"></p>
+          <div class="products" id="products"></div>
+          <noscript><p class="notice">The product catalogue needs JavaScript. Use the quote form to ask about any material.</p></noscript>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section class="section section--dark" id="projects" aria-labelledby="projects-title">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="eyebrow">ILLUSTRATIVE SHOWCASE</p>
+          <h2 class="display" id="projects-title">Three kinds of project. One standard of supply.</h2>
+          <p class="section__sub">These are illustrative showcase concepts, not completed projects of a real business.</p>
+        </header>
+
+        <div class="showcase">
+          <figure class="proj proj--a reveal">
+            <div class="media" data-art="residential" data-img="residential" data-alt="Contemporary residential building with clean concrete lines"></div>
+            <figcaption><span class="tag">Illustrative</span><h3>Residential construction</h3><p>Foundations, walls and roofs for homes, estates and developments, supplied in step with your site programme.</p></figcaption>
+          </figure>
+          <figure class="proj proj--b reveal">
+            <div class="media" data-art="commercial" data-img="commercial" data-alt="Commercial building facade with a grid of tall windows"></div>
+            <figcaption><span class="tag">Illustrative</span><h3>Commercial development</h3><p>Structural steel, concrete and services materials for offices, plazas and retail.</p></figcaption>
+          </figure>
+          <figure class="proj proj--c reveal">
+            <div class="media" data-art="renovation" data-img="renovation" data-alt="Building under renovation with scaffolding and new finishes"></div>
+            <figcaption><span class="tag">Illustrative</span><h3>Renovation and finishing</h3><p>Tiles, paints, fittings and fixings for refurbishing existing buildings to a higher standard.</p></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ WHY CHOOSE US ============ -->
+    <section class="section section--light" id="about" aria-labelledby="about-title">
+      <div class="container split">
+        <div class="split__media reveal">
+          <div class="media media--tall" data-art="foundation" data-img="foundation" data-alt="Concrete foundation and columns of a building under construction"></div>
+        </div>
+        <div class="split__body">
+          <p class="eyebrow eyebrow--ink reveal">WHY MONOLITH</p>
+          <h2 class="display reveal" id="about-title">THE RIGHT MATERIALS.<br>THE RIGHT FOUNDATION.</h2>
+          <ul class="values">
+            <li class="reveal"><h3>Carefully selected materials</h3><p>Every product is chosen for the job it has to do on site.</p></li>
+            <li class="reveal"><h3>Clear quotation process</h3><p>Tell us what you need and receive a straightforward response.</p></li>
+            <li class="reveal"><h3>Reliable communication</h3><p>Plain answers on WhatsApp, with no chasing required.</p></li>
+            <li class="reveal"><h3>Support throughout procurement</h3><p>From first quantity estimate to delivery coordination.</p></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ DELIVERY / SERVICES ============ -->
+    <section class="section section--graphite grain" id="services" aria-labelledby="delivery-title">
+      <div class="container delivery">
+        <div class="delivery__copy">
+          <p class="eyebrow reveal">DELIVERY AND SERVICE AREAS</p>
+          <h2 class="display reveal" id="delivery-title">Materials routed to where you build.</h2>
+          <p class="section__sub reveal">Example service areas are shown below. They are configurable and are not claims of coverage until the supplier confirms them.</p>
+          <ul class="areas reveal" id="areas"></ul>
+          <a class="btn btn--primary reveal" href="#quote" id="check-delivery">CHECK DELIVERY AVAILABILITY</a>
+        </div>
+        <div class="delivery__map reveal" aria-hidden="true">
+          <svg viewBox="0 0 520 520" focusable="false">
+            <defs>
+              <pattern id="g" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="rgba(244,241,234,.07)"/></pattern>
+            </defs>
+            <rect width="520" height="520" fill="url(#g)"/>
+            <g class="routes" fill="none" stroke="#B69A69" stroke-width="1.2">
+              <path d="M110 400 C180 330 230 300 300 270"/>
+              <path d="M300 270 C310 220 350 170 390 120"/>
+              <path d="M300 270 C330 250 360 200 380 190"/>
+              <path d="M300 270 C260 280 220 330 110 400" opacity=".0"/>
+            </g>
+            <g class="nodes" fill="#101110" stroke="#B69A69" stroke-width="1.4">
+              <circle cx="110" cy="400" r="7"/><circle cx="300" cy="270" r="7"/><circle cx="390" cy="120" r="7"/><circle cx="380" cy="190" r="7"/>
+            </g>
+            <g class="pulse" fill="none" stroke="#B69A69"><circle cx="300" cy="270" r="7"/></g>
+            <g fill="#F4F1EA" font-family="Manrope, Arial, sans-serif" font-size="13" letter-spacing="2">
+              <text x="126" y="418">LAGOS</text><text x="316" y="296">ABUJA</text><text x="406" y="116">KANO</text><text x="396" y="204">KADUNA</text>
+            </g>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TRUST ============ -->
+    <section class="section section--dark" aria-labelledby="trust-title">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="eyebrow">SERVICE STANDARDS</p>
+          <h2 class="display" id="trust-title">BUILT ON TRUST.</h2>
+          <p class="section__sub">The standards Monolith intends to hold itself to. No ratings or reviews are shown because none have been earned yet.</p>
+        </header>
+        <div class="trust">
+          <article class="reveal"><h3>Honest quotations</h3><p>Prices are confirmed by the supplier and never guessed for you.</p></article>
+          <article class="reveal"><h3>Accurate availability</h3><p>We say what is available and when, and we say so early if that changes.</p></article>
+          <article class="reveal"><h3>Prompt replies</h3><p>Every enquiry gets a direct answer from a person who knows the stock.</p></article>
+          <aside class="placeholder reveal" aria-label="Customer testimonials placeholder">
+            <p class="eyebrow">PLACEHOLDER</p>
+            <h3>Customer testimonials go here.</h3>
+            <p>Add genuine, permission-approved customer feedback once the supplier has it. Do not publish invented reviews.</p>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT + QUOTE ============ -->
+    <section class="section section--light" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="eyebrow eyebrow--ink">START A CONVERSATION</p>
+          <h2 class="display" id="contact-title">LET'S BUILD SOMETHING<br>THAT LASTS.</h2>
+          <p class="section__sub">Tell us what your project needs. We'll help you start the conversation.</p>
+        </header>
+
+        <div class="contact">
+          <form class="quote" id="quote" novalidate aria-labelledby="quote-title">
+            <h3 id="quote-title" class="quote__title">Request a quotation</h3>
+            <p class="quote__note">This form opens WhatsApp with your details written out. It does not send your data to a server, and nothing is stored.</p>
+
+            <div class="grid2">
+              <div class="field"><label for="f-name">Full name</label><input id="f-name" name="name" type="text" autocomplete="name" required aria-describedby="e-name"><p class="err" id="e-name" role="alert"></p></div>
+              <div class="field"><label for="f-biz">Business name <em>(optional)</em></label><input id="f-biz" name="business" type="text" autocomplete="organization"></div>
+              <div class="field"><label for="f-phone">Phone number</label><input id="f-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="+234 800 000 0000" required aria-describedby="e-phone"><p class="err" id="e-phone" role="alert"></p></div>
+              <div class="field"><label for="f-cat">Material category</label><select id="f-cat" name="category" required aria-describedby="e-cat"><option value="">Select a category</option></select><p class="err" id="e-cat" role="alert"></p></div>
+              <div class="field"><label for="f-product">Product name</label><input id="f-product" name="product" type="text" list="product-list" placeholder="Choose or type a product" required aria-describedby="e-product"><datalist id="product-list"></datalist><p class="err" id="e-product" role="alert"></p></div>
+              <div class="field"><label for="f-qty">Estimated quantity</label><input id="f-qty" name="quantity" type="text" placeholder="e.g. 200 bags" required aria-describedby="e-qty"><p class="err" id="e-qty" role="alert"></p></div>
+              <div class="field field--full"><label for="f-loc">Delivery location</label><input id="f-loc" name="location" type="text" list="area-list" placeholder="Town or city, and state" autocomplete="address-level2" required aria-describedby="e-loc"><datalist id="area-list"></datalist><p class="err" id="e-loc" role="alert"></p></div>
+              <div class="field field--full"><label for="f-notes">Additional project details <em>(optional)</em></label><textarea id="f-notes" name="notes" rows="4" placeholder="Project type, timeline, site access, anything that helps"></textarea></div>
+            </div>
+
+            <button class="btn btn--dark" type="submit">SEND ON WHATSAPP</button>
+            <p class="status" id="status" role="status" aria-live="polite"></p>
+          </form>
+
+          <aside class="details reveal" aria-label="Contact details">
+            <h3>Contact</h3>
+            <dl>
+              <div><dt>WhatsApp</dt><dd><a id="wa-link" href="https://wa.me/" target="_blank" rel="noopener">Open WhatsApp</a></dd></div>
+              <div><dt>Telephone</dt><dd id="phone-ph">[Telephone placeholder]</dd></div>
+              <div><dt>Email</dt><dd id="email-ph">[Business email placeholder]</dd></div>
+              <div><dt>Service areas</dt><dd id="areas-text">Abuja, Kano, Lagos, Kaduna (examples)</dd></div>
+            </dl>
+            <p class="small">Contact details are placeholders until the supplier provides real ones.</p>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer grain">
+    <div class="footer__grid" aria-hidden="true"></div>
+    <div class="footer__inner container">
+      <div class="footer__brand">
+        <a class="logo" href="#top"><span class="logo__mark" aria-hidden="true"></span><span class="logo__text"><strong>MONOLITH</strong><small>BUILDERS &amp; MATERIALS</small></span></a>
+        <p>Premium building materials, dependable supply, and professional service.</p>
+      </div>
+      <nav aria-label="Footer">
+        <a href="#materials">Materials</a><a href="#services">Services</a><a href="#projects">Projects</a><a href="#about">About</a><a href="#contact">Contact</a>
+      </nav>
+      <div class="footer__legal">
+        <button type="button" data-legal="privacy">Privacy policy</button>
+        <button type="button" data-legal="terms">Terms and conditions</button>
+      </div>
+    </div>
+    <p class="footer__copy container">&copy; 2026 Monolith Builders &amp; Materials. Fictional brand created as a website demonstration.</p>
+  </footer>
+
+  <button class="to-top" id="to-top" type="button" aria-label="Back to top" hidden><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></button>
+
+  <dialog class="legal" id="legal" aria-labelledby="legal-title">
+    <form method="dialog">
+      <h2 id="legal-title"></h2>
+      <p id="legal-body"></p>
+      <button class="btn btn--dark" value="close">CLOSE</button>
+    </form>
+  </dialog>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <div class="cursor" id="cursor" aria-hidden="true"></div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
